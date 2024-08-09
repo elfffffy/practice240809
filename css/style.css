@@ -36,3 +36,16 @@ button {
     text-align: center;
     cursor: pointer;
 }
+
+.box.on {
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+p.on {
+    color: rgb(156, 73, 87);
+}
+
+h3.on {
+    color: rgb(44, 133, 168);
+}

@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습파일</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            btn = $('button');
+            box = $('.box');
+            textP = $('p');
+            textH3 = $('h3');
+
+            btn.click(function(){
+                box.toggleClass('on');
+                textP.toggleClass('on');
+                textH3.toggleClass('on');
+            })
+        })//script end
+    </script>
 </head>
 <body>
     <div class="box">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptas eius ipsum! Blanditiis eligendi nobis placeat eveniet totam veritatis omnis in et, error amet eos, hic perferendis cupiditate reprehenderit architecto.</p>
         <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quibusdam saepe, in rerum architecto odio dolore reiciendis, numquam aliquam dignissimos impedit, deleniti totam commodi cupiditate nihil molestiae et ad obcaecati.</h3>
-        <button>next</button>
+        <button>change</button>
     </div><!-- box end -->
 </body>
 </html>
